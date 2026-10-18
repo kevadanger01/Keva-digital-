@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KEVA DIGITAL accompagne les petites entreprises dans leur présence sur Internet en RDC.">
+  <title>KEVA DIGITAL | Sites Internet</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      background: #0d1b2e;
+      border-bottom: 1px solid #263b55;
+    }
+
+    header h2 {
+      color: #35c5ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 55px 8%;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 8vw, 58px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .blue {
+      color: #35c5ff;
+    }
+
+    p {
+      color: #c5d0df;
+      margin: 15px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 22px;
+      background: #168bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 23px;
+      border-radius: 12px;
+      background: #102239;
+      border: 1px solid #263f5d;
+    }
+
+    .card h3 {
+      color: #35c5ff;
+    }
+
+    .about {
+      background: #0d1b2e;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      background: #030912;
+      color: #9eafc4;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>KEVA DIGITAL</h2>
+    <p>Votre présence numérique commence ici.</p>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+    <h1>Faites grandir votre entreprise <span class="blue">sur Internet</span></h1>
+    <p>
+      Nous aidons les boutiques, restaurants et entrepreneurs
+      à présenter leurs activités grâce au numérique.
+    </p>
+    <a class="button" href="#services">Découvrir nos services</a>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Nos services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Sites Internet</h3>
+        <p>Des pages web pour présenter votre entreprise et vos services.</p>
+      </div>
+      <div class="card">
+        <h3>Communication digitale</h3>
+        <p>Des visuels et contenus pour mieux présenter vos produits.</p>
+      </div>
+      <div class="card">
+        <h3>Visibilité en ligne</h3>
+        <p>Une présence numérique claire pour toucher davantage de clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="apropos">
+    <h2 class="section-title">À propos de KEVA DIGITAL</h2>
+    <p>
+      KEVA DIGITAL est un projet entrepreneurial en République
+      démocratique du Congo. Notre ambition est d'aider les petites
+      entreprises à profiter des opportunités d'Internet.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Parlons de votre projet</h2>
+    <p>Vous souhaitez présenter votre entreprise sur Internet ?</p>
+    <a class="button"
+       href="https://wa.me/243000000000">
+       Nous contacter sur WhatsApp
+    </a>
+    <p>Remplacez le numéro de démonstration par votre vrai numéro WhatsApp avant publication.</p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> KEVA DIGITAL — RDC</p>
+    <p>Rêve • Planifie • Agis • Réussis</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+  </html>
+  
